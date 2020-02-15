@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: blueviolet;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 2% 0% 2%;
+}
+.left h2{
+    color: white;
+}
+
+
+.right{
+    align-self: center;
+}
+
+.right a{
+    margin: auto 5px auto 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.right a:hover{
+    transition: 0.35s;
+    border-bottom: 3px solid white;
+    border-radius:auto auto 3px auto ;
+}
+main{
+    background-image: url("../src/homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 550px;
+}
+
+section h1{
+    margin-top: 0;
+    text-align: center;
+    align-self: center;
+    flex: auto ;
+    color: white;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -1s;
+
+}
+
+@keyframes example{
+    0%{top:500px;}
+    100%{top:0px;}
+}
